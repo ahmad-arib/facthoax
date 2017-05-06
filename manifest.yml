@@ -1,0 +1,11 @@
+declared-services:
+  my-nlc-service:
+    label: natural_language_classifier
+    plan: standard
+applications:
+- services:
+  - Natural-Language-Classifier-6b
+  name: fact-hoax-demo
+  command: npm start
+  path: .
+  memory: 512M
